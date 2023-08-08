@@ -24,7 +24,7 @@ import { ForgotPasswordPage } from './forgot-password';
 import Logistration from './logistration/Logistration';
 import { ProgressiveProfiling } from './progressive-profiling';
 import { RecommendationsPage } from './recommendations';
-import { RegistrationPage } from './register';
+import { EmbedableRegistrationForm } from './register';
 import { ResetPasswordPage } from './reset-password';
 
 import './index.scss';
@@ -44,7 +44,7 @@ const MainApp = () => (
       <EmbeddedRegistrationRoute
         exact
         path={REGISTER_EMBEDDED_PAGE}
-        component={RegistrationPage}
+        component={EmbedableRegistrationForm}
       />
       <UnAuthOnlyRoute exact path={LOGIN_PAGE} render={() => <Logistration selectedPage={LOGIN_PAGE} />} />
       <UnAuthOnlyRoute exact path={REGISTER_PAGE} component={Logistration} />

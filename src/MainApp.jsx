@@ -29,6 +29,11 @@ const MainApp = () => (
       <Route exact path="/">
         <Redirect to={updatePathWithQueryParams(REGISTER_PAGE)} />
       </Route>
+      <Route exact path="/pablo" render={() => <span>Pablo G</span>}>
+        <div>
+          <h2>Soy Pablo</h2>
+        </div>
+      </Route>
       <UnAuthOnlyRoute exact path={LOGIN_PAGE} render={() => <Logistration selectedPage={LOGIN_PAGE} />} />
       <UnAuthOnlyRoute exact path={REGISTER_PAGE} component={Logistration} />
       <UnAuthOnlyRoute exact path={RESET_PAGE} component={ForgotPasswordPage} />

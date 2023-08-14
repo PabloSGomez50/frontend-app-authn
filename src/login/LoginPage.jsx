@@ -262,7 +262,7 @@ class LoginPage extends React.Component {
           <Form name="sign-in-form" id="sign-in-form">
             <h3>Esta es la prueba de Pablo G.</h3>
             <FormGroup
-              name="emailOrUsername"
+              name="emailOrUsername_TestPablo"
               value={this.state.emailOrUsername}
               autoComplete="on"
               handleChange={(e) => this.setState({ emailOrUsername: e.target.value, isSubmitted: false })}

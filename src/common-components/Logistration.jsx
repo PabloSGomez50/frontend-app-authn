@@ -83,6 +83,7 @@ const Logistration = (props) => {
           <Redirect to={updatePathWithQueryParams(key)} />
         )}
         <div id="main-content" className="main-content">
+          <h2>Pablo en common-omponents/Logistration.jsx</h2>
           {selectedPage === LOGIN_PAGE
             ? <LoginPage institutionLogin={institutionLogin} handleInstitutionLogin={handleInstitutionLogin} />
             : <RegistrationPage institutionLogin={institutionLogin} handleInstitutionLogin={handleInstitutionLogin} />}
